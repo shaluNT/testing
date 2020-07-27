@@ -14,7 +14,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class AppTest 
 {
     
-    
+     System.out.println( "Hello World!" );
+        System.setProperty("webdriver.chrome.driver","/home/nt/code/jenkins/chromedriver");
+        WebDriver driver = new ChromeDriver();
+        driver.get("https://www.javatpoint.com");
+System.out.println(driver.getTitle());
     
     /**
      * Rigorous Test :-)
