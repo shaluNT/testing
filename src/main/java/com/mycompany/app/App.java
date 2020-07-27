@@ -1,6 +1,8 @@
 package com.mycompany.app;
-import org.openqa.selenium.Webdriver;
-import org.openqa.selenium.chrome.Chromedriver;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 /**
  * Hello world!
@@ -12,7 +14,7 @@ public class App
     {
         System.out.println( "Hello World!" );
         System.setProperty("webdriver.chrome.driver","/home/nt/code/jenkins/chromedriver");
-        Webdriver driver = new Chromedriver();
+        WebDriver driver = new ChromeDriver();
         driver.get("https://www.javatpoint.com");
         System.out.println(driver.getTitle());
         
